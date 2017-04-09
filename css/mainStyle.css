@@ -1,0 +1,64 @@
+@charset "UTF-8";
+body{
+	background-color: #252525;
+	font-family: 'Poppins', sans-serif;
+	min-width: 2000px;
+	background-size: 100% auto;
+}
+
+.bgVideo {
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+}
+.mainContainer {
+	position: fixed;
+	width: 100%;
+	top:0px;
+	background-color: rgba(0,0,0,0.70);
+	color:azure;
+	height:100vh;
+	z-index: 5;
+}
+
+.titleBox{
+	margin: auto;
+	margin-top: 25vh;
+	text-align: center;
+	letter-spacing: 8px;
+	font-size: 2em;
+}
+
+.buttonBox{
+	margin: auto;
+	width: 15%;
+	border: 5px solid #F68121;
+	text-align: center;
+	z-index: 10;
+}
+
+#beginButton{
+	transition: all 0.5s ease;
+	text-align: center;
+	color:azure;
+	letter-spacing: 5px;
+}
+
+#beginButton:hover{
+	color:#F68121;
+	letter-spacing: 0px;
+}
+
+#menuImg1{
+	position: absolute;
+	height:150px;
+	left: 80px;
+	bottom: 50px;
+}
+
+#menuImg2{
+  position: absolute;
+    right: 80px;
+    bottom: 50px;
+    height: 150px;
+}

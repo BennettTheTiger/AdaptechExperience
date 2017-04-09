@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Adaptech Experience</title>
+<link rel="icon" href="assets/secondary.png">
+<!-- Link jQuery for the nav js script -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<!-- Link the seriously library and the camera plugin to use the web cam as the source and the chroma effect -->	
+<script type="text/javascript" src="js/seriously.js"></script>
+<script type="text/javascript" src="js/seriously.camera.js"></script>
+<script type="text/javascript" src="js/seriously.chroma.js"></script>	
+<!--link my custom style sheets -->
+<link href="css/mainStyle.css" rel="stylesheet" type="text/css">
+<link href="css/navStyles.css" rel="stylesheet" type="text/css">
+<!-- Google Font Link -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+</head>
+
+<body>
+	<canvas id="myCanvas" width="1000" height="1000"></canvas>
+	<video autoplay loop class="bgVideo">
+		<source src="assets/webVideo.mp4" type="video/mp4">
+	</video>
+	<div class="mainContainer">
+		
+		<div class="titleBox">
+			<h1 class="mainTitle">ADAPTECH EXPERIENCE</h1>
+		</div>
+		<div class="buttonBox">
+			<h2 id="beginButton">START</h2>
+		</div>
+		<img id="menuImg1" src="assets/tf.logo.color.png">
+		<img id="menuImg2" src="assets/primary.png">
+	</div>
+	<!-- HTML FOR THE NAV -->
+		<div class="navHolder">
+		<img src="assets/secondary.png" class="done" id="navImg">
+			<ul class="navList">
+				<li class="navLink" id="snow">SNOW</li>
+				<li class="navLink" id="woods">WOODS</li>
+				<li class="navLink" id="tree">TREE LINE</li>
+				<li class="navLink done" id="done">DONE</li>
+			</ul>
+			<a href="http://www.treefrogcamouflage.com" target="new"><img src="assets/tf.logo.color.png" id="treeFrogNav"></a>
+		</div>
+		
+</body>
+	 <style> body {padding: 0; margin: 0;
+		  }
+	  #myCanvas{
+		  position: fixed;
+		  top: -300px;
+		  width: 100%;
+		  z-index: 1;
+	  }
+	
+	</style>
+</html>
+<!-- scripts that run the nav and chroma keying -->
+<script type="text/javascript" src="js/navFunctions.js"></script>
+<script type="text/javascript" src="js/videoRender.js"></script>
