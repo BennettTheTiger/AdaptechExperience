@@ -53,5 +53,21 @@ $( document ).ready(function() {
 		$('body').css('background-image','url(assets/imgs/treeLine.jpg)')
 	});
 	
+	//handles full screen
+	$('body').keydown(function(e){
+		if(e.which == 70){
+			var element = document.querySelector('body');
+			if (element.requestFullscreen) {
+			  element.requestFullscreen();
+			} else if (element.mozRequestFullscreen) {
+			  element.mozRequestFullscreen();
+			} else if (element.mozRequestFullScreen) { // camel-cased 'S' was changed to 's' in spec
+			  element.mozRequestFullScreen();
+			} else if (element.webkitRequestFullscreen) {
+			  element.webkitRequestFullscreen();
+			}		
+		}	  
+	});
+	
 	});
 	
