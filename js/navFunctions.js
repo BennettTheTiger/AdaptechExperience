@@ -53,7 +53,7 @@ $( document ).ready(function() {
 		$('body').css('background-image','url(assets/imgs/treeLine.jpg)')
 	});
 	
-	//handles full screen
+		//handles full screen
 	$('body').keydown(function(e){
 		if(e.which == 70){
 			var element = document.querySelector('body');

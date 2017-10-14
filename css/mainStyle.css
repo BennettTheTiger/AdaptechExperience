@@ -1,7 +1,15 @@
 @charset "UTF-8";
+
+@font-face{
+	font-family: 'adaptechMain';
+	src: url('font/target.ttf')
+		format('truetype');
+	
+}
+
 body{
 	background-color: #252525;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'adaptechMain', sans-serif;
 	min-width: 2000px;
 	background-size: 100% auto;
 }
@@ -35,6 +43,7 @@ body{
 	border: 5px solid #F68121;
 	text-align: center;
 	z-index: 10;
+	min-width: 300px;
 }
 
 #beginButton{

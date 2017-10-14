@@ -21,12 +21,7 @@ var videoSource = seriously.source('camera', {
         }
     });
 
-
-
-// connect all our nodes in the right order
+// connect all the nodes in the right order
 chroma.source = videoSource;
 target.source = chroma;
-seriously.go();
-
-
 seriously.go();
